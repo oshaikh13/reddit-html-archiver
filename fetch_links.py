@@ -10,12 +10,12 @@ import os
 from psaw import PushshiftAPI
 
 pushshift_rate_limit_per_minute = 20
-max_comments_per_query = 150
+max_comments_per_query = 100
 write_every = 10
 
 link_fields = ['author', 'created_utc', 'domain', 'id', 'is_self', 
     'num_comments', 'over_18', 'permalink', 'retrieved_on', 'score', 
-    'selftext', 'stickied', 'subreddit_id', 'title', 'url']
+    'selftext', 'stickied', 'subreddit_id', 'title', 'url', 'name', 'link_flair_text', 'upvote_ratio']
 comment_fields = ['author', 'body', 'created_utc', 'id', 'link_id', 
     'parent_id', 'score', 'stickied', 'subreddit_id']
 
